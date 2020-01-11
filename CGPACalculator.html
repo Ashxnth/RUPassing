@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+      <title>Unofficial GPA Calculator</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, intial-scale=1"/>
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+  </head>
+  
+  <body>
+    <h1>Ryerson GPA Calculator</h1>
+    <div class="container">
+      <h2>Welcome to the GPA Calculator!</h2>
+      <form id="entries">
+        <table id="table">
+          <tbody>
+            <tr>
+              <th>Entry #</th>
+              <th>Grade (%)</th>
+              <th>Weight (%)</th>
+            </tr>
+            <tr>
+              <th>#1</th>
+              <th><input type="text" name="grade1"></th>
+              <th><input type="text" name="weight1"></th>
+            </tr>
+            <tr>
+              <th>#2</th>
+              <th><input type="text" name="grade2"></th>
+              <th><input type="text" name="weight2"></th>
+            </tr>
+            <tr>
+              <th>#3</th>
+              <th><input type="text" name="grade3"></th>
+              <th><input type="text" name="weight3"></th>
+            </tr>
+            <tr>
+              <th>#4</th>
+              <th><input type="text" name="grade4"></th>
+              <th><input type="text" name="weight4"></th>
+            </tr>
+            <tr>
+              <th>#5</th>
+              <th><input type="text" name="grade5"></th>
+              <th><input type="text" name="weight5"></th>
+            </tr>
+          </tbody>
+        </table>
+        <input type="submit" value="Submit" id="submit" class="button">
+        <span id="addRow" class="button">Add Row</span>
+      </form>
+      <h3>Your Final Grade is: </h3>
+    </div>
+
+    <script src="GPA.js"></script>
+
+  </body>  
+</html>
