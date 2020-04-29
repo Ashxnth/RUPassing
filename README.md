@@ -1,2 +1,2 @@
-# CGPA-Calculator
+# RUPassing?
 Simple CGPA Calculator made using JavaScript.
