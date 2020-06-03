@@ -8,10 +8,11 @@ const GradesList = () => {
     getGrades();
     // eslint-disable-next-line
   }, []);
+  console.log(grades);
 
   return (
     <div className="GradesList">
-      {grades.map(grades => (<li><b>{grades.name}</b> Grade: {grades.grade}% Weight: {grades.weight}% <button onClick={() => deleteGrade(grades._id)}>X</button></li>))}   
+      {grades.map(grades => (<li><b>{grades.text}</b> Grade: {grades.grade}% Weight: {grades.weight}% <button onClick={() => deleteGrade(grades._id)}>X</button></li>))}   
     </div>
   );
 }

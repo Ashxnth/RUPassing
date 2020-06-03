@@ -1,6 +1,6 @@
 import React, {useState, useContext} from 'react';
 import { GlobalContext } from '../context/GlobalState';
-import { Button } from '@material-ui/core'; 
+import { Button, Input, Spacer } from '@zeit-ui/react';
 
 const AddGrade = () => {
     const [name, setName] = useState('');
@@ -24,16 +24,19 @@ const AddGrade = () => {
     return (
         <div className="AddGrade">
             <h2>Add New Grade</h2>
-            <form onSubmit={onSubmit}>
-                <h5>Evaluation Name</h5>
-                <input onChange={(e) => setName(e.target.value)} placeholder="Enter Evaluation Name..."></input>
-                <h5>Grade (%)</h5>
-                <input onChange={(e) => setGrade(e.target.value)} placeholder="Enter Grade..."></input>
-                <h5>Weight (%)</h5>
-                <input onChange={(e) => setWeight(e.target.value)} placeholder="Enter Weight..."></input>
-                <br></br>
-                <input type="submit" value="Submit"></input>
-            </form>
+            <Input onChange={(e) => setName(e.target.value)} placeholder="Enter Evaluation Name..." status="secondary">
+                Evaluation Name
+            </Input>
+            <br></br>
+            <Input onChange={(e) => setGrade(e.target.value)} placeholder="Enter Grade..." status="secondary">
+                Grade (%)
+            </Input>
+            <br></br>
+            <Input onChange={(e) => setWeight(e.target.value)} placeholder="Enter Weight..." status="secondary">
+                Weight (%)
+            </Input>
+            <Spacer />
+            <Button onClick={onSubmit} shadow type="secondary">Submit</Button>
         </div>
     );
 }
