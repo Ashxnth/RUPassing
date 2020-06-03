@@ -12,7 +12,7 @@ const calculations = require('./routes/calculations');
 const app = express();
 
 //body-parser middleware
-app.use(express.json()); 
+app.use(express.json());
 
 //routes
 app.use('/api/v1/calculations', calculations);
