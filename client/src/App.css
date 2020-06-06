@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background-image: linear-gradient(slateblue, magenta);
+    background-image: url("https://images.wallpapersden.com/image/download/colorful-universe_63458_3840x2160.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -17,7 +17,7 @@ body {
     padding-top: 1em;
     padding-bottom: 1em;
     border-radius: 1em;
-    background-color: white !important;
+    background-color: #ffffff !important;
 }
 .header-container {
     display: flex;
